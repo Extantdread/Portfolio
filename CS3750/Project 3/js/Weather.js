@@ -45,30 +45,28 @@ export class Weather {
     displayElement.setAttribute("class", "display");
 
     displayElement.innerHTML = `
-      <div class="display">
-        <div class="city">
-          ${this.city}
-        </div>
+      <div class="city">
+        ${this.city}
+      </div>
 
-        <div class="temperature">
-          ${this.temperature} K
-        </div>
+      <div class="temperature">
+        ${this.temperature} K
+      </div>
 
-        <div class="image">
-          <img src="http://openweathermap.org/img/wn/${this.image}@2x.png" width="500px" />
-        </div>
+      <div class="image">
+        <img src="http://openweathermap.org/img/wn/${this.image}@2x.png" width="500px" />
+      </div>
 
-        <div class="humidity">
-          Humidity: ${this.humidity}%
-        </div>
+      <div class="humidity">
+        Humidity: ${this.humidity}%
+      </div>
 
-        <div class="pressure">
-          Pressure: ${this.pressure} hPa
-        </div>
+      <div class="pressure">
+        Pressure: ${this.pressure} hPa
+      </div>
 
-        <div class="wind">
-          Wind: ${this.wind} MPH
-        </div>
+      <div class="wind">
+        Wind: ${this.wind} MPH
       </div>
     `;
 
